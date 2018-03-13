@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-image: url("images/Awesome.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #cccccc;
+    padding: 20px;
+    font-family: Arial
+}
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+    text-shadow: -2px 2px 0px lightblue, -3px 3px 1px #edef77, -4px 4px 2px blue;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+.column {
+    float: left;
+    width: 25%
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background-color: #eefefe;
+    padding: 10px;
+}
+
+@media (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        width:100px;
+    }
+}
